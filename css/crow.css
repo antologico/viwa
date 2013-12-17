@@ -1,0 +1,273 @@
+/*
+------------------------------------------------------------
+
+  proyecto:   VIWA. Anilizador Visual de Websites
+  autor:      anto@usal.es
+  
+------------------------------------------------------------
+*/
+
+body
+{
+    background: #E5F2FF;
+    height: 100%;
+    width: 100%;
+}
+
+.node 
+{
+    stroke: #fff;
+    stroke-width: 1.5px;
+    cursor: pointer;
+}
+
+#loader
+{
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  background: #fff;
+  background: rgba(200,230,255, 0.6);
+  margin-left: -20px;
+  margin-top: -52px;
+  width:40px;
+  height: 40px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 300;
+  text-align: center;
+  border: 2px solid #9DF;
+  display: none;
+}
+
+#loader img
+{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.link.hard
+{
+      stroke: #000;
+      stroke-opacity: .3;
+}
+
+.link.bridge
+{
+      stroke: #f00;
+      stroke-opacity: .5;
+}
+
+.link 
+{
+      stroke: #666;
+      stroke-opacity: .1;
+      fill: none;
+}
+
+.pantalla_completa
+{
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     bottom: 0px;
+     position: absolute;
+}
+
+.visualizer
+{
+     left: 0px;
+     right: 0px;
+     top: 0px;
+     bottom: 0px;
+     position: absolute;
+}
+
+.tooltip 
+{   
+  position: absolute;           
+  text-align: center;           
+  pointer-events: none;
+  height: 30px;         
+}
+
+.tooltip .title 
+{
+  padding: 8px;             
+  font: 12px sans-serif;        
+  background: white;   
+  border: 2px solid #999;
+  -webkit-border-radius: 10px 10px 10px 0px;
+  -moz-border-radius: 10px 10px 10px 0px;
+  border-radius: 10px 10px 10px 0px;
+  margin: 2px;
+}
+
+#menu
+{
+  border-right: 2px solid #009344;
+  background:  #F4f4f4;
+  position: absolute;
+  left: -290px;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  z-index: 400;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#menu:hover
+{
+  left: 0;
+}
+
+#site_list_inputs
+{
+  width: 100%;
+  min-height: 3px;
+}
+.button_list, #site_list_add, .input-group
+{
+  margin-top: 10px;
+}
+
+#search_button, #search_tweets
+{
+  width: 100%;
+}
+
+.input-group-addon
+{
+  color: #FFF;
+  background: #009344;
+}
+
+.input-group-addon, .form-control
+{
+  border: 1px solid #009344;
+}
+
+#menu-info
+{
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  z-index: 100;
+}
+
+#menu-info .text
+{
+    background: #FFF;
+    padding: 8px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #009344;
+    float: right;
+    margin-left: -1px;
+}
+
+#logo
+{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+#remove_site_button,
+#add_site_button
+{
+  width: 136px;
+}
+
+#splash-screen
+{
+  top: 50%;
+  left: 50%;
+  margin-left: -165px;
+  margin-top: -165px;
+  position: absolute;
+  z-index: 900;
+}
+
+.tabs-viwa
+{
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+a, a:hover, a:focus
+{
+  color: #009344;
+}
+
+.glyph-at
+{
+  font-size: 18px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus 
+{
+  background:  #F4f4f4;
+}
+
+/* Representación de Tweets */
+
+  .overlay
+  {
+      background-color: none;
+  }
+   
+
+  .node circle 
+  {
+    fill: #FFFFFF;
+    stroke: #009344;
+    stroke-width: 1.5px;
+  }
+   
+  .node text 
+  {
+    font-size:10px; 
+    font-family:sans-serif;
+    color: #009344;
+    stroke-width: 0px;
+  }
+   
+  .link.tweet
+  {
+      stroke: #009344;
+      stroke-opacity: 1;
+  }
+
+  .templink 
+  {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show
+  {
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle
+  {
+       display: none;
+  }
+
+  .tweet-icon
+  {
+    border-radius: 50%;
+  }
+
+
